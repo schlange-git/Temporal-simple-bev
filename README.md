@@ -1,4 +1,27 @@
-# Simple-BEV: What Really Matters for Multi-Sensor BEV Perception?
+## 🚀 Key Contributions
+
+1. **Pure-Vision Temporal Extension**  
+   - Based entirely on a pure-vision approach: reads multiple frames and feeds them into model training.
+
+2. **Code Modifications**
+
+### `train_nuscenes.py`  
+- Reads multiple frames per sample.  
+- Extracts each frame’s coordinates in the world reference frame.  
+- Sends these coordinates and corresponding data to `segnet.py`.
+
+### `segnet.py`  
+- Aligns feature maps extracted from different frames by mapping all frames to the coordinate system of the last frame in each group.  
+- Stacks multi-frame feature maps along the channel dimension.  
+- Adapts the network to accept this multi-frame, channel-stacked input.  
+
+
+
+
+
+#Below is the original author’s content.
+
+Simple-BEV: What Really Matters for Multi-Sensor BEV Perception?
 
 This is the official code release for our arXiv paper on BEV perception. 
 
