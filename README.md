@@ -19,7 +19,7 @@
 
 
 
-#Below is the original author’s content.
+# Below is the original author’s content.
 
 Simple-BEV: What Really Matters for Multi-Sensor BEV Perception?
 
