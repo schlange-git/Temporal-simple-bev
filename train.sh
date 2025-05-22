@@ -3,6 +3,7 @@ export OMP_NUM_THREADS=4
 export MKL_NUM_THREADS=4
 
 #DATA_DIR="/mnt/data/sets/nuscenes"
+# add your own path 
 DATA_DIR="/mnt/home/data/sets/nuscenes"
 
 # there should be ${DATA_DIR}/full_v1.0/
